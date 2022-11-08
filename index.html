@@ -4,50 +4,65 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Proyecto-Final</title>
+	<link rel="icon" type="logo.svg" href="./asset/logo.svg">
 	<link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 <body>
 <header>
-	<nav>
-		<main >
-			<a href="index.html">index</a>
-			<a href="historia.html">historia</a>
-			<a href="juguemos.html">juguemos</a>
-
-		</main>
+	<nav class="navegador">
+		
+			<a href="index.html">
+				<svg width="200" height="80">
+				<rect id="logo1" x="45" y="5" width="60" height="35" rx="5"  fill="#3F6797"></rect>
+				<rect id="logo2" x="50" y="10" width="50" height="25" rx="5"  fill="#B1D5E4"></rect>
+				<polygon id="logo3" points="55 45 ,95 45,115 62,30 62" fill="#3F6797" ></polygon>
+				<polygon id="logo4" points="57 48 ,92 48,104 58,43 58" fill="#B1D5E4" ></polygon>
+			</svg>
+			</a>
+			<div class="navegador2">
+			<ul>
+				<li class="historia">
+			<a href="historia.html">HISTORIA</a>
+			</li>
+			<li class="juego">
+			<a href="juguemos.html">JUGUEMOS</a>
+            </li>  
+		</ul>
+		</div>
 	</nav>
-	<br>
-	<br>
-	<br>
-	<div id=Titulo>
-	<img src="codigo.jpeg"id=001 > 
-	<br>
-	<br>
-	<h1>PROGRAMACION E HISTORIA</h1>
+	
+	<div id="titulo">
+	<header >
+        <div id="tituloTexto">        
+		<h1 >PROGRAMACION E HISTORIA</h1>
 	</div>
+	</header></div>
 	<br>
 	<br>
-	<h2>CONTENIDO</h2>
-	<br>
-	<br>
-	<div>
-	<img src="img1.jpg">
+	<h2 id="sub1">CONTENIDO</h2>
+	<section class="contenedor">
+	<div class="contenedor1">
+	<img src="./asset/img1.jpg">
 	<p>Conozcamos Un poco sobre la historia de la programacion</p>
+	<br><br><br>
 	<a href="historia.html">ir a historia</a>
 	</div>
-	<div>
-		<img src="img2.jpg">
+	<div class="contenedor2">
+		<img src="./asset/img2.jpg">
 		<p>Juguemos un poco sobre la computacion</p>
+		<br><br><br>
 		<a href="juguemos.html">ir a juego</a>
 	</div>
-
-</header>
-<footer>
-	<p>PROGRAMACION
-E
-HISTORIA</p>
+	</section>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<footer class="footer">
+	<div class="footer1"><p>PROGRAMACION<br> E<br> HISTORIA</p>
+		<img src="./asset/logo.svg">
+</div>
+<div class="footer2">
 <p>Sitio con fines educativos - Creado por M.Victoria Lopez</p>
+</div>
 </footer>
-<script src="estilo.js"></script>
+<script src="./asset/estilo.js"></script>
 </body>
 </html>

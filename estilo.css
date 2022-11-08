@@ -1,66 +1,92 @@
-*{box-sizing: border-box;
+/*Estilos generales*/
+
+*{
+box-sizing: border-box;
 padding: 0;
 margin: 0;}
 body{
 	background: #427E80;
 }
-#001 {
-	border-image-slice: ;
-}
-h{
+
+h1{
 	color: #F0F5E4;
-	}
+	text-shadow: 2px 2px black;
+}	
 h2{
 	color: #F0F5E4;
+	text-shadow: 2px 2px black;
 }
-footer{
-	background: #2D2D2D;
-	display: block;
+*{
+	font-family: 'Monserrat', sans-serif;
 }
 
-.video{
-	display: block;
+/*navegador*/
+
+.navegador{
+	height: 85px;
+	display: flex;
+	justify-content: space-between;
 	align-items: center;
-	position: absolute;
-	border: solid 5px;
-}
-.video video{
-	width: 75%;
-	height: 900px;
-	border:solid; 5px;
-	position: relative;
-	right: -15%;
-
-	
+	margin: 0px 40px;
 }
 
-
-.botonera{
-	width: 75%;
-	height: 40px;
-	background-color: black;
-	position: relative;
-	right: -15%;
-	top: 15%;
-	
+rect#logo1, polygon#logo3{
+    animation: part_1 ease-in 5s  ;
+    animation-iteration-count:1 ;
+    }
+    
+rect#logo2,polygon#logo4{
+animation: part_2 ease-in 5s  ;
+animation-iteration-count:1 ;
 }
-.botonera button{
-	cursor: poiter;
-	padding: 5px;
-	border-radius: 10px;
-	box-shadow: 2px 3px darkgray;
+@keyframes part_1{
+    0% {
+    transform: translate(0,-10px);
+    opacity:0;}
+    20% {
+    transform: translate(0,-10px);
+    opacity:0;}
+    30% {
+    transform: translate(0,0);
+    opacity:1;}
+    90% {
+    transform: translate(0,0);
+    opacity:1;}
+    
+    100% {
+        transform: translate(0,0);
+        opacity:1;}
+}   
+@keyframes part_2 {
+    0% {
+        transform: translate(0,-10px);
+        opacity:0;}
+        30% {
+        transform: translate(0,-10px);
+        opacity:0;}
+        40% {
+        transform: translate(0,0);
+        opacity:1;}
+        90% {
+        transform: translate(0,0);
+        opacity:1;}
 
+        100% {
+            transform:translate(0,0);
+            opacity:1;}
+        }  
 
+.navegador ul{
+	display: flex;
+	justify-content: flex-end;
+	gap: 20px;
+	width: 300px;
 }
-button:active{
-	box-shadow: none;
-	transform: translate(3px,2px);
-}
-a{
+.navegador2 a{
 	border: solid 2px;
 	border-radius: 5px;
 	background-color: #F0F5E4;
-	display:inline-flex;
+	display:block;
 	width: 65px;
 	height: 30px;
 	box-shadow: 2px 3px black;
@@ -69,54 +95,324 @@ a:active{
 	box-shadow: none;
 	transform: translate(3px,2px);
 }
+.historia{
+	display: list-item;
+	list-style-type: none;
+	text-align: -webkit-match-parent
+}
+.historia a{
+	text-decoration: none;
+	justify-content: center;
+	border: 2px 3px;
+	border-radius: 10px;
+	width: 110px;
+	height: 40px;
+	padding: 8px;
+}
+.juego{
+	display: list-item;
+	list-style-type: none;
+	text-align: -webkit-match-parent
+}
+.juego a{
+	text-decoration: none;
+	padding: 8px;
+	justify-content: center;
+	border: 2px 3px;
+	border-radius: 10px;
+	width: 110px;
+	height: 40px;
+}
+#titulo{
+	background: url("./asset/codigo.jpg") 50% 0 fixed;
+	background-size: cover;
+	width: 100%;
+	min-height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;	
+}
+#tituloTexto{
+	text-align: center;
+	width: 100%;
+	background: grey;
+	font-size: 30px
+}
+
+/*pestaña index*/
+
+#sub1{
+	justify-content: center;
+	font-size: 45px;
+	display: flex;
+}
+.contenedor{
+	display: flex;
+	justify-content: space-between;
+ 	margin-top: 200px;
+}
+.contenedor1{
+	width: 350px;
+	justify-content: center;
+	height: 400px;
+	background-color: white;
+	border: 5px solid blue;
+	margin-left: 300px;
+}
+.contenedor1 img{
+	width: 100%;
+	margin-bottom: 25px;
+}
+.contenedor1 p{
+	width: 90%;
+	text-align: center;
+	height: 30px;
+}
+.contenedor1 a{
+	position: relative;
+	background-color: blue;
+	color: white;
+	width: 40%;
+	justify-content: center;
+	right: -30%;
+	text-align: center;
+	height: 40px;
+	border: 2px black;
+	border-radius: 3px;
+	padding: 10px;
+	text-decoration: none;
+}
+.contenedor2{
+	width: 350px;
+margin-right: 300px;	
+	height: 400px;
+	justify-content: center;
+	background-color: white;
+	border: 5px solid blue;
+}
+.contenedor2 img{
+	width: 100%;
+	margin-bottom: 25px;
+}
+.contenedor2 p{
+	width: 90%;
+	text-align: center;
+	height: 30px;
+	padding-bottom: 53px;
+}
+.contenedor2 a{
+	position: relative;
+	background-color: blue;
+	color: white;
+	width: 40%;
+	padding: 10px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	justify-content: center;
+	right: -30%;
+	height: 40px;
+	border: 2px black;
+	border-radius: 3px;
+}
+
+/*pestaña historia*/
+
 .container{
 	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	padding: 100px 20px;
+
+}
+.caja1{
 	width: 100%;
-	height: 150px;
-	position: relative;
+	height: 350px;
+	justify-content: space-around;
+	display: flex;
 }
-.container h2{
-left: 3%;
-position: absolute;
-font-size: 35px;
-;
+.caja1 h2{
+	width: 50%;
+	height: 350px;
+	padding: 50px;
+	font-size: 40px;
 }
-.container p{
-	right: -60%;
-	position: relative;
-	width: 40%;
+.caja1 p{
+	text-align: justify;
+	width: 50%;
+	height: 350px;
+	padding: 50px;
+	font-size: 18px;
 }
 .caja2{
-	display: flex;
 	width: 100%;
-	height: 150px;
-	position: relative;
+	height: 350px;
+	justify-content: space-around;
+	display: flex;
+	flex-direction: row-reverse;
+
 }
 .caja2 h2{
-position: absolute;
-font-size: 35px;
-right: 15%;
+	width: 50%;
+	height: 350px;
+	padding: 50px;
+	font-size: 40px;
+	margin: 50px;
+
 }
 .caja2 p{
-	right: -40%;
-	left: 3%;
-	position: relative;
-	width: 40%;
+	text-align: justify;
+	width: 50%;
+	height: 350px;
+	padding: 50px;
+	font-size: 18px;
 }
 .caja3{
+	width: 100%;
+	height: 200px;
+	justify-content: space-around;
+	display: flex;
+
+}
+.caja3 h2{
+	width: 25%;
+	height: 350px;
+	padding: 50px;
+	font-size: 40px;
+	margin: 20px;
+
+}
+.caja3 p{
+	text-align: justify;
+	width: 75%;
+	height: 350px;
+	padding: 50px;
+	font-size: 18px;
+}
+.tituloVideo{
+	font-size: 40px;
+	font-display: block;
+	padding-top: 400px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+.video{
+	width: 70%;
+	padding: 5px;
+	background-color: black;
+	display: block;
+	right: -215px;
+	position: relative;
+}
+.video video{
+		width: 100%;
+		
+	}
+.botonera{
+	display: flex;
+	justify-content: flex-start;
+	gap: 20px;
+	border-radius: 4px;
+	padding: 2px 5px;
+	background-color: grey;
+	height: 60px;
+	width: 100%;
+}
+.botonera button{
+	cursor: poiter;
+	padding: 5px;
+	width: 80px;
+
+	height: 50px;
+	border-radius: 10px;
+	box-shadow: 2px 3px darkgray;
+}
+button:active{
+	box-shadow: none;
+	transform: translate(3px,2px);
+}
+
+/*pestaña juego*/
+
+.tituloJuego{
+	font-size: 45px;
+	width: 100%;
+	justify-content: center;
+	display: flex;
+	margin-top: 120px;
+	margin-bottom: 40px;
+}
+.contenedorJuego{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 40px;
+	height: 400px;
+}
+.contenedorJuego div{
+	border: 2px solid black;
+	background-color: grey;
+	width: 280px;
+	display: flex;
+	justify-content: center;
+	padding-top: 15px;
+	font-size: 18px;
+}
+.contenedorImagen{
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	width: 100%;
+	margin-bottom: 40px;
+	height: 400px;
+}
+.contenedorImagen img{
+	width: 280px;
+	display: flex;
+	justify-items: center;
+}
+.reiniciarJuego{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+.reiniciarJuego button{
+	width: 250px;
+    height: 45px;   
+    border: 2px solid;
+    border-radius: 8px;
+}
+
+/*footer*/
+
+.footer{
+	background: #2D2D2D;
 	display: flex;
 	width: 100%;
-	height: 150px;
-	position: relative;
+	margin-top: 80px;
+	margin-bottom: 10px;
+	height: 80px;
 }
-.caja2 h2{
-position: absolute;
-font-size: 35px;
-right: 15%;
+.footer1{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin-right: 30px;
+	color: white;
+	flex-direction: row-reverse;
+	margin-left: -200px;
+	text-align: center;
+	gap: 100px;
+	align-items: center;
+	font-size: 18px;
 }
-.caja2 p{
-	right: -40%;
-	left: 3%;
-	position: relative;
-	width: 40%;
+.footer2{
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+	margin-right: 30px;
+	color: white;
+	align-items: center;
+	font-size: 18px;
 }
